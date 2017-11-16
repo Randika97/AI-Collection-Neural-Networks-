@@ -13,10 +13,11 @@ labels = [0, 0, 1, 1]
 
 clf = tree.DecisionTreeClassifier()
 clf = clf.fit(features, labels)
-ans = clf.predict([[150, 0]])
+result = clf.predict([[150, 0]])
 
-if ans == 1:
+#initializing the predicted answer
+if result == 1:
     print("Orange")
-if ans == 0 :
+if result == 0:
     print("Apple")
 
