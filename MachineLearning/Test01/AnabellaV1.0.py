@@ -11,6 +11,7 @@ features = [[140, 1], [140, 1], [170, 0], [150, 0]]
 #labels = ["apple", "apple", "orange", "orange"]
 labels = [0, 0, 1, 1]
 
+#making a decision tree clissifier
 clf = tree.DecisionTreeClassifier()
 clf = clf.fit(features, labels)
 result = clf.predict([[150, 0]])
@@ -20,4 +21,6 @@ if result == 1:
     print("Orange")
 if result == 0:
     print("Apple")
+
+
 
